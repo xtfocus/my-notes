@@ -55,7 +55,7 @@ To summary, here are some indexing strategies:
         - In IVF: it's clustering so one sample can only be mapped to one bucket, so the buckets are disjoint. To start, use KMeans to calculate clusters and centroids. Given a query, find the closest centroid, then search all samples in the corresponding cluster. Very simple. There are multiple implementations of IVF, most include cluster-probing for edge cases; [some even uses quantization](https://aclanthology.org/2023.emnlp-main.116.pdf). 
     - Hierarchical Navigable Small Worlds (HNSW): top-tier performance for ANN ([source](https://github.com/erikbern/ann-benchmarks)), at the cost of the index's size (consume more memory). It's graph-based, and can be roughly seen as hierarchical clustering but there are also similarities between same-level-clusters. Traversing is from high to lower level, and from node to node.
 
-![HNSW.png](/home/tung/websites/my_note/content/attachments/HNSW.png)
+![HNSW.png](attachments/HNSW.png)
 
 ---
 Reference:
