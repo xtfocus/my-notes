@@ -60,12 +60,13 @@ To summary, here are some indexing strategies:
 </p>
 
 ---
-Reference:
-- https://www.datastax.com/guides/what-is-a-vector-index
-- https://www.pinecone.io/learn/series/faiss/vector-indexes/
-- https://www.pinecone.io/learn/series/faiss/locality-sensitive-hashing/
-- https://www.iunera.com/kraken/fabric/locality-sensitive-hashing-lsh/#1-how-does-lsh-work
-- https://www.pinecone.io/learn/series/faiss/locality-sensitive-hashing-random-projection/
-- https://www.uber.com/en-VN/blog/lsh/
+Sources:
 - https://aclanthology.org/2023.emnlp-main.116.pdf
 - https://cornelltech.github.io/CS5112-F18/Lectures/Lec18.LSH.pdf
+- https://www.datastax.com/guides/what-is-a-vector-index
+- https://www.iunera.com/kraken/fabric/locality-sensitive-hashing-lsh/#1-how-does-lsh-work
+- https://www.pinecone.io/learn/series/faiss/hnsw/
+- https://www.pinecone.io/learn/series/faiss/locality-sensitive-hashing-random-projection/
+- https://www.pinecone.io/learn/series/faiss/locality-sensitive-hashing/
+- https://www.pinecone.io/learn/series/faiss/vector-indexes/
+- https://www.uber.com/en-VN/blog/lsh/
