@@ -92,7 +92,8 @@ touch layouts/_default/_markup/render-link.html
 
 # Step 2: Make content
 
-Make some posts (Markdown files) under `content/posts/` using Obsidian. 
+Make some posts (Markdown files) under `content/posts/` using Obsidian.md or any text editors.
+
 ```
 mkdir -p content/posts
 ```
