@@ -8,7 +8,7 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "🪴 Quartz 4.0",
+    pageTitle: "🥭 ข้าวเหนียวมะม่วง",
     enableSPA: true,
     enablePopovers: true,
     analytics: {
@@ -22,31 +22,31 @@ const config: QuartzConfig = {
       fontOrigin: "googleFonts",
       cdnCaching: true,
       typography: {
-        header: "Schibsted Grotesk",
-        body: "Source Sans Pro",
-        code: "IBM Plex Mono",
+        header: "Newsreader",
+        body: "Spectral",
+        code: "JetBrains Mono",
       },
       colors: {
         lightMode: {
-          light: "#faf8f8",
-          lightgray: "#e5e5e5",
-          gray: "#b8b8b8",
-          darkgray: "#4e4e4e",
-          dark: "#2b2b2b",
-          secondary: "#284b63",
-          tertiary: "#84a59d",
+          light: "#f7f5eb",
+          lightgray: "#e0ddd7",
+          gray: "#A09D98",
+          darkgray: "#5c534b",
+          dark: "#242220",
+          secondary: "#635b8f",
+          tertiary: "#69a3d6",
           highlight: "rgba(143, 159, 169, 0.15)",
         },
-        darkMode: {
-          light: "#161618",
-          lightgray: "#393639",
-          gray: "#646464",
-          darkgray: "#d4d4d4",
-          dark: "#ebebec",
-          secondary: "#7b97aa",
-          tertiary: "#84a59d",
-          highlight: "rgba(143, 159, 169, 0.15)",
-        },
+      darkMode: {
+        light: "#262626",
+        lightgray: "#4e4e4e", 
+        gray: "#a4a5a6",
+        darkgray: "#a4a5a6", 
+        dark: "#dedfe0", 
+        secondary: "#bf7b6b", 
+        tertiary: "#f2d091",
+        highlight: "rgba(204, 120, 50, 0.15)", 
+      }
       },
     },
   },
