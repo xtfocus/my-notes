@@ -21,6 +21,7 @@ I'm Tung. You are on my land. Here's what you need to know:
 
 [Obsidian.md](https://obsidian.md/) to link my notes.
 
-To publish the site: I tried Hugo(https://gohugo.io/), it was good, documentation is very good. I made a simple tutorial [[Hugo_Obsidian_Starter|here]]. 
+To publish the site: I tried [Hugo](https://gohugo.io/), it was good, documentation is very good. I made a simple tutorial [[Hugo_Obsidian_Starter|here]]. 
 
-But in the end, I picked Quartz, mostly for the graphview.
+But in the end, I picked [Quartz](https://quartz.jzhao.xyz/), mostly for the graphview.
+

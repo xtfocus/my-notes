@@ -1,0 +1,71 @@
+---
+title: Vector Store Introduction
+aliases:
+  - Vector Store
+  - Vector Database
+tags:
+  - vector database
+  - vector store
+  - ann
+  - approximate-nearest-neighbors
+---
+
+A vector store (a.k.a a vector database), is a database for vectors. It can impact your RAG application performance in three ways:
+- speed 
+- accuracy
+- memory
+
+Ideally you want a database that searchs fast with high accuracy, with low memory consumption.
+
+## Intuition and jargons
+
+Say you have an unstructured knowledgebase (of texts, images, unlike those pretty tables).
+
+You also have a **query** (also unstructured, unlike vanilla SQL `SELECT`s), to which you want most accurate **results**, assuming the more similar the more accurate.
+
+For example: 
+- knowledgebase: a book about health topics
+- query 1: "Does eating too much fries lead to cancer"
+- expected result: "According to document xyz, high consumption of fries is not associated with cancer"
+
+The way people solve this these days is to embed everything: the knowledgebase, the query; then do a similarity search. You can write software to do it. Luckily, many has already done so and research into optimizing vector stores with respect to:
+- Searching: gotta be efficient (fast)
+- Handle large, multi-dimension tensors
+- Parallelization, distributed computing
+
+In this blog, I focus on search optimization only
+
+## Search optimization
+
+To improve search speed, indexing is crucial.
+
+Indexing essentially means organizing. For a simple example, you have to sort an array in advance if you want to perform binary search (which is fast), or make a trie if you want efficient pattern matching. By reorganizing (indexing) the data in advance, you improve the searching speed.
+
+The structure you used to organize records is called an index. A **vector index**, hence, is a data structure used to organize vectors: could be just incremental numbering like in tables, or hash in hash tables, or tree nodes, etc. In the context of data engineering, people sometimes use the terms *index* and *database* interchangeably.
+
+## Indexing strategies
+
+You can just jump to this brilliant [Pinecone tech blog](https://www.pinecone.io/learn/series/faiss/vector-indexes/)
+
+To summary, here are some indexing strategies:
+- Flat indexing: means no indexing at all, just leave the vectors as is. The similarity between the query vector and every other vector in the index (the vector store) is computed. This is **slow (linear complexity)**.
+- Approximate nearest-neighbors (#ANN): reduce vector size or reduce search scope, includes:
+    - Locality Sensitive Hashing (LSH) indexing: uses a hashing function that has hash similar vectors to the same output(s). For example: Golden Retriever and Mastiff are more likely to be hashed to the same hash cluster (name it the dog bucket) than Mastiff and Burmese Cat are. Then at query time, we also hash the query (says Beagle), likely to be hashed to the dog bucket 9 out of 10 times. We then simply compare the query against all vectors in the dog bucket and retrieve the most similar. 
+    There are several choices for LSH function: the traditional such as shingling, MinHashing, and banding; more modern ones such as Random Projection. Pinecone shared many high-quality articles on these options.
+    - Inverted File Index (IVF): Similar to LHS in the sense that it reduces search scope by clustering first, but not quite:
+        - In LHS: each sample and each query will be hashed multiple times, so one sample can be mapped to multiple hash buckets (many-to-many relationship between samples and buckets). 
+        - In IVF: it's clustering so one sample can only be mapped to one bucket, so the buckets are disjoint. To start, use KMeans to calculate clusters and centroids. Given a query, find the closest centroid, then search all samples in the corresponding cluster. Very simple. There are multiple implementations of IVF, most include cluster-probing for edge cases; [some even uses quantization](https://aclanthology.org/2023.emnlp-main.116.pdf). 
+    - Hierarchical Navigable Small Worlds (HNSW): top-tier performance for ANN ([source](https://github.com/erikbern/ann-benchmarks)), at the cost of the index's size (consume more memory). It's graph-based, and can be roughly seen as hierarchical clustering but there are also similarities between same-level-clusters. Traversing is from high to lower level, and from node to node.
+
+![HNSW.png](assets/imgs/HNSW.png)
+
+---
+Reference:
+- https://www.datastax.com/guides/what-is-a-vector-index
+- https://www.pinecone.io/learn/series/faiss/vector-indexes/
+- https://www.pinecone.io/learn/series/faiss/locality-sensitive-hashing/
+- https://www.iunera.com/kraken/fabric/locality-sensitive-hashing-lsh/#1-how-does-lsh-work
+- https://www.pinecone.io/learn/series/faiss/locality-sensitive-hashing-random-projection/
+- https://www.uber.com/en-VN/blog/lsh/
+- https://aclanthology.org/2023.emnlp-main.116.pdf
+- https://cornelltech.github.io/CS5112-F18/Lectures/Lec18.LSH.pdf
