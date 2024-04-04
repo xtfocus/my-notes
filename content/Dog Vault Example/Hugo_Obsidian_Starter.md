@@ -2,13 +2,13 @@
 date: 2023-06-03
 authors:
 - Tung Nguyen
-title: How I created this site
+title: How I created a Hugo site
 tags: []
 categories: []
 series: []
 ---
 
-My OS: Arch Linux
+My OS: Linux
 
 Tools I used:
 - Hugo
@@ -133,12 +133,12 @@ cargo install obsidian-export
 obsidian-export content/posts content/posts
 ```
 
-Your links should be functional now.
+Your links should be functional now. A demo is in [[dog]]
 
 # What's next
 Your site is able to render text and link properly. But you might want to use a more advanced theme like [hugo-coder](https://github.com/luizdepra/hugo-coder/tree/main). You might also want to custom `layouts` furthermore. Go find out how to do that.
 
-You might also want to showcase your graphview. Check out [Quartz](https://quartz.jzhao.xyz/)
+You might also want to showcase your graphview. Check out [Quartz](https://quartz.jzhao.xyz/). Quarzt also negates the need for link converters tool.
 
 Finally, you may want to publish your site. Hugo has documentation on several hosting manners, Github pages are also [included](https://gohugo.io/hosting-and-deployment/hosting-on-github/)
 
