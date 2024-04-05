@@ -15,6 +15,8 @@ A vector store (a.k.a a vector database), is a database for vectors. It can impa
 
 Ideally you want a database that searchs fast with high accuracy, with low memory consumption.
 
+In this blog, I introduce some key concepts in vector database, and cover their indexing and searching techniques
+
 ## Intuition and Jargons
 
 Say you have an unstructured knowledgebase (of texts, images, unlike those pretty tables).
@@ -58,6 +60,8 @@ To summary, here are some indexing strategies:
 <p align="center">
   <img src="attachments/HNSW.png" alt="HNSW.png"/>
 </p>
+
+>Most vector indexing/searching techniques are also applicable to **data deduplication**. Check [LSH](https://yorko.github.io/2023/practical-near-dup-detection/), [Inverted Indexing](https://users.cecs.anu.edu.au/~Peter.Christen/publications/ramadan2013dmapps.pdf), [HNSW](https://github.com/ncn-foreigners/blocking)
 
 ---
 Sources:
