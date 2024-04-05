@@ -16,7 +16,7 @@ Then came [Sentence-BERT](https://arxiv.org/abs/1908.10084) (SBERT, 2019), the f
 ## Embedding for QnA
 Question Answering (QA) is a major NLP application. QA can be categorized into Open-Domain vs Closed-Domain, Extractive vs Open-Generative (Open-book) vs Closed-Generative (Close-book) , depending on the input and output. 
 
->There are so many ways to categorize them (see [wiki](https://en.wikipedia.org/wiki/Question_answering#Types_of_question_answering) and this [thesis][https://www.lti.cs.cmu.edu/research/dissertations/2023/kaixinm_phd_lti_2023.pdf] and this [survey paper](https://www.iosrjournals.org/iosr-jce/papers/Vol19-issue6/Version-4/D1906041923.pdf))
+>There are so many ways to categorize them (see [wiki](https://en.wikipedia.org/wiki/Question_answering#Types_of_question_answering) and this [thesis](https://www.lti.cs.cmu.edu/research/dissertations/2023/kaixinm_phd_lti_2023.pdf) and this [survey paper](https://www.iosrjournals.org/iosr-jce/papers/Vol19-issue6/Version-4/D1906041923.pdf))
 
 For convenience sake, we only discuss embedding in Open-Domain Question Answering (ODQA), which is typically used in chat-bot and RAG systems. In such systems, we typically provide a questions as an input, and expect a relevant answer in return.
 
@@ -36,7 +36,7 @@ The example above demonstrate the disadvantage of sentence similarity in a QA sy
 
 Plain sentence-embedding like BERT, SBERT is bad. Use an embedding machine optimized for QA instead. Some candidates:
 
-- DPR (which is a [[Bi-Encoder|bi-encoder]])
+- DPR (which is a [[Bi-Encoder|bi-encoder]], like SBERT, but optimized for QA)
 - Others: https://huggingface.co/models?pipeline_tag=question-answering&sort=trending
 - https://huggingface.co/sentence-transformers/multi-qa-MiniLM-L6-cos-v1
 - https://huggingface.co/sentence-transformers/multi-qa-mpnet-base-dot-v1
@@ -46,4 +46,4 @@ Sources:
 - https://www.pinecone.io/learn/series/nlp/dense-vector-embeddings-nlp/#Generating-Dense-Vectors
 - https://huggingface.co/transformers/v4.3.3/model_summary.html
 - https://huggingface.co/models?pipeline_tag=document-question-answering&sort=trending
-
+- https://www.sbert.net/examples/applications/cross-encoder/README.html

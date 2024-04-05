@@ -6,3 +6,6 @@ categories: []
 
 Update soon
 
+---
+Sources:
+- https://www.sbert.net/examples/applications/cross-encoder/README.html
