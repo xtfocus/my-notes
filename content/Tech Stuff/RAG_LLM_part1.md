@@ -5,7 +5,7 @@ categories: []
 series: ["Vietnamese RAG"]
 ---
 
-[💉The series](tags/vrag)
+[💉The series](tags/💉vrag)
 ---
 
 I have a [[lc_vaccine_articles_json|dataset]] of over 600 articles (ethically) sourced from a pharmacy retailer's [site](https://nhathuoclongchau.com.vn). With this example dataset, in this series, I show how to quickly prototype a baseline RAG.
