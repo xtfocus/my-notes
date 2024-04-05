@@ -4,7 +4,12 @@ tags: ["sentence-transformer", "embedding"]
 categories: []
 ---
 
-Update soon
+Update soon:
+- cross-encoder architecture
+- bi-encoder architecture
+- applications
+- example codes showing architecture and usage
+- showcase some popular bi-encoders (SBERT, DPR, some for Vietnamese)
 
 ---
 Sources:
