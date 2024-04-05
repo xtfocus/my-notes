@@ -1,13 +1,14 @@
 ---
-title: Build a RAG application on Vietnamese vaccine articles
-tags: ["rag", "vector-database", "vector-store"]
+title: "Build a RAG application on Vietnamese vaccine articles (VRAG): part 1"
+tags: ["rag", "vector-database", "vector-store", "vrag"]
 categories: []
 series: ["Vietnamese RAG"]
 ---
 
-I have a datasets of 500 articles ethically sourced from a pharmacy retailer's [site](https://nhathuoclongchau.com.vn).
+[The series](tags/vrag)
+---
 
-In this series, I show how to prototype a baseline RAG fast.
+I have a [[lc_vaccine_articles_json|dataset]] of over 600 articles (ethically) sourced from a pharmacy retailer's [site](https://nhathuoclongchau.com.vn). With this example dataset, in this series, I show how to quickly prototype a baseline RAG.
 
 ## Refresher on RAG
 

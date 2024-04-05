@@ -4,7 +4,7 @@ authors:
 - Tung Nguyen
 title: How I created a Hugo site
 tags: []
-categories: []
+categories: ["tutorial"]
 series: []
 ---
 
