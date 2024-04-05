@@ -2,8 +2,8 @@
 title: Vector Store Introduction
 aliases:
 tags:
-  - vector database
-  - vector store
+  - vector-database
+  - vector-store
   - ann
   - approximate-nearest-neighbors
 ---

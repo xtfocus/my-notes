@@ -1,13 +1,13 @@
 ---
-title: {Build a RAG application on Vietnamese vaccine articles}
-tags: []
+title: Build a RAG application on Vietnamese vaccine articles
+tags: ["rag", "vector-database", "vector-store"]
 categories: []
 series: ["Vietnamese RAG"]
 ---
 
-I have a datasets of 500 articles ethically sourced from a pharmacy retailer's [site](nhathuoclongchau.com.vn).
+I have a datasets of 500 articles ethically sourced from a pharmacy retailer's [site](https://nhathuoclongchau.com.vn).
 
-In this series, I show how you can prototype a baseline RAG fast.
+In this series, I show how to prototype a baseline RAG fast.
 
 ## Refresher on RAG
 
@@ -15,15 +15,24 @@ In this series, I show how you can prototype a baseline RAG fast.
 *(Source: [NVIDIA](https://developer.nvidia.com/blog/rag-101-demystifying-retrieval-augmented-generation-pipelines/))*
 
 In a RAG application, we typically want to emphasize on optimizing data digestion and similarity search:
-- Digestion is the way you chunk and embed, probably index, data. Good digestion can improve search accuracy and speed
-- Similarity search: this goes hand in hand with digestion: usually, certain indexing is required for certain search algorithms.
+- **Digestion** is the way you chunk and embed, probably index, data. Good digestion can improve search accuracy and speed
+- **Similarity search**: this goes hand in hand with digestion: usually, certain indexing is required for certain search algorithms.
 
-We have the option to configure chunking, even embedding ourselves.
-
-For storing, indexing, similarity search, we typically use a pre-built [[vector_db|vector store]] (some vector databases, e.g. [Chroma](https://docs.trychroma.com/embeddings), also offer embeddingout of the box). It helps to know what's going on under the hood, in case you want to fork it and create your own vector database.
+In **Digestion**, we have the option to configure/implement chunking, even embedding ourselves. For storing, indexing, and **similarity search**, people typically use a pre-built [[vector_db|vector store]]
 
 >Under the hood, Chroma DB used  [HNSW index](https://cookbook.chromadb.dev/core/concepts/#vector-index-hnsw-index) to index vectors. It seems to also used [relational databases as metadata storage and filtering](https://cookbook.chromadb.dev/core/concepts/#document-and-metadata-index). 
+>Pinecone developed their own [graph algorithm](https://www.pinecone.io/blog/hnsw-not-enough/#The-Pinecone-Approach:-Purpose-built-for-Vector-Search)
+
+## Embedding
+ 
+ To embed, you need an embedding model. Here's my [[embedding_machine|blog]] on embedding for RAG
+
+
 
 ---
 Sources:
-- https://www.pinecone.io/learn/series/faiss/hnsw/
+
+Pinecone has several unmissable learning techblog [series](https://www.pinecone.io/learn/):
+- RAG: https://www.pinecone.io/learn/series/rag/
+- FAISS (Facebook AI Similarity Search): https://www.pinecone.io/learn/series/faiss/
+
