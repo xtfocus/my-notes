@@ -63,6 +63,14 @@ To summary, here are some indexing strategies:
 
 >Most vector indexing/searching techniques are also applicable to **data deduplication**. Check [LSH](https://yorko.github.io/2023/practical-near-dup-detection/), [Inverted Indexing](https://users.cecs.anu.edu.au/~Peter.Christen/publications/ramadan2013dmapps.pdf), [HNSW](https://github.com/ncn-foreigners/blocking)
 
+## Comparison
+
+According to an experiment by a medium writer [here post](https://medium.com/@stepkurniawan/comparing-faiss-with-chroma-vector-stores-0953e1e619eb), FAISS is superior over ChromaDB in **context precision**, **context recall**, and search time. Here's their explanation:
+>**Why is there discrepancy between vector stores?**
+>The non-deterministic nature of Chroma’s algorithm for similarity search is attributed to its use of the approximate nearest neighbor (ANN) algorithm, specifically Hierarchical Navigable Small World (HNSW). During the search process, it involves the exclusion of some data points.
+>Contrastingly, FAISS employs two components: (1) [Product quantization](https://inria.hal.science/inria-00514462/document) (PQ) encoding and (2) a search system with inverted indexing [1]. PQ introduces techniques for compressing high-dimensional vectors with a lossy approach. In the current implementation, it also uses HNSW as the search system. But, unlike the standard HNSW, this combination enhances search efficiency, resulting in faster search and more relevant contexts to the query.
+
+
 ---
 Sources:
 - https://aclanthology.org/2023.emnlp-main.116.pdf
