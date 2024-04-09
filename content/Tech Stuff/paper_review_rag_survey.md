@@ -33,6 +33,8 @@ Strategies include:
 - Alignment optimization
 - Mixed Retrieval
 
+More details
+
 **2. Optimize the original query**
 
 Clarify user's query, make it more suitable for retrieval task. Strategies:
@@ -105,7 +107,7 @@ Given a query, decide which pathway is optimal. This is agent-like behavior
 
 ---
 
-## Indexing optimization
+## Indexing Optimization
 
 #### Chunking
 
@@ -121,3 +123,50 @@ Small2Big is an attempt to achieve a balance: retrieve small chunks first, then 
 >([Sophia Yang](https://towardsdatascience.com/advanced-rag-01-small-to-big-retrieval-172181b396d4))
 
 #### Metadata
+
+Page number, file/chapter name, author, etc.
+
+Metadata can also be artificially constructed: generated table/column summaries in [[ingesting_tables_for_rag#level-3-llm-to-generate-the-context|the LlamaIndex Tesla 10-k report example]], for instance.
+
+#### Structural Index
+
+Knowledge graphs or parent-child indexing.
+
+#### Query Optimization
+
+Query Expansion using Multi-query/RAG Fusion have been summarized above.
+
+Query Transformation: Rewrite the query completely or combine with a step-back prompted version to inject high-level concept to user's query.
+
+Query Routing: based on metadata/keywords or semantic routing.
+
+---
+
+## Embedding
+
+#### Hybrid Embedding
+
+While dense vectors are gaining prominence, sparse vectors (created with tfidf, SPLADE, or BM25) can still be useful, especially when the search quality is impacted by **exact keywords**. This results in a Hybrid/Mixed Search. How you actually implement it is up to you, for instance:
+- Use sparse vectors for a quick initial search, which narrows the search scope for dense vectors search
+- Or use both searches at the same time, then apply fusion (see [this](https://weaviate.io/blog/hybrid-search-explained))
+
+#### Fine-tuning Embedding Model
+
+(Continue-pretraining to be exact) requires expensive + complicated setups.
+
+---
+
+## Fancier Retrieval
+
+This section mentions Iterative, Recursive, and Adaptive Retrieval 
+
+<p align="center">
+  <img src="attachments/retrieval_paradigms.png" alt="retrieval_paradigms"/>
+</p>
+
+>Fig. 5. In addition to the most common once retrieval, RAG also includes three types of retrieval augmentation processes. (left) Iterative retrieval involves
+>alternating between retrieval and generation, allowing for richer and more targeted context from the knowledge base at each step. (Middle) Recursive retrieval
+>involves gradually refining the user query and breaking down the problem into sub-problems, then continuously solving complex problems through retrieval
+>and generation. (Right) Adaptive retrieval focuses on enabling the RAG system to autonomously determine whether external knowledge retrieval is necessary
+>and when to stop retrieval and generation, often utilizing LLM-generated special tokens for control.
+
