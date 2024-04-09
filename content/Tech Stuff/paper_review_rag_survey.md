@@ -170,3 +170,22 @@ This section mentions Iterative, Recursive, and Adaptive Retrieval
 >and generation. (Right) Adaptive retrieval focuses on enabling the RAG system to autonomously determine whether external knowledge retrieval is necessary
 >and when to stop retrieval and generation, often utilizing LLM-generated special tokens for control.
 
+---
+
+## What's the paper did not discuss?
+
+On chat history, the paper did mention that
+
+>. In cases of ongoing
+>dialogues, any existing conversational history can be integrated
+>into the prompt, enabling the model to engage in multi-turn
+>dialogue interactions effectively.
+
+and that's it. What I was expecting is:
+
+- techniques to handle ever-expanding dialogues: chat history got too long and the question wasn't even parsed.
+- techniques to avoid repetive responses due to greedy similarity search from chat history.
+
+These issues were briefly discussed on [reddit](https://www.reddit.com/r/LangChain/comments/167ndda/conversationalretrievalchains_pigeon_holes_on/), without any breakthrough. However, such problems were [not new](https://www.reddit.com/r/LocalLLaMA/comments/14xyg8h/handling_chat_histories_that_are_longer_than_the/), and a combination of short-term and long-term history sounds reasonable.
+
+LangChain's `ConversationBufferMemory` is also worth looking into.
