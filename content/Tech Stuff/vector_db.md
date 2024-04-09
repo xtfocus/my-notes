@@ -6,6 +6,7 @@ tags:
   - vector-store
   - ann
   - approximate-nearest-neighbors
+  - rag
 ---
 
 A vector store (a.k.a a vector database), is a database for vectors. It can impact your RAG application performance in three ways:
