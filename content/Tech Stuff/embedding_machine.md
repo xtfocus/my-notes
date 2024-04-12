@@ -32,11 +32,11 @@ The example above demonstrate the disadvantage of sentence similarity in a QA sy
 *(Source [Pinecone](https://www.pinecone.io/learn/series/nlp/dense-vector-embeddings-nlp/#Generating-Dense-Vectors))*
 
 
-## Summary
+## Other choices
 
-Plain sentence-embedding like BERT, SBERT is bad. Use an embedding machine optimized for QA instead. Some candidates:
+Plain sentence-embedding like BERT, SBERT is not good enough. Use an embedding machine optimized for QA instead. Some candidates:
 
-- DPR (which is a [[Bi-Encoder|bi-encoder]], like SBERT, but optimized for QA)
+- DPR: optimized for QA, good on paper but also got critique because it might need lots of fine-tuning (Saw [James Briggs](https://www.youtube.com/@jamesbriggs) compared DPR with BM25, BM25 won). - Another article on why DPR sucks [here](https://thenewstack.io/overcoming-the-limits-of-rag-with-colbert/). In this article, ColBERT was recommended.
 - Others: https://huggingface.co/models?pipeline_tag=question-answering&sort=trending
 - https://huggingface.co/sentence-transformers/multi-qa-MiniLM-L6-cos-v1
 - https://huggingface.co/sentence-transformers/multi-qa-mpnet-base-dot-v1
