@@ -9,7 +9,7 @@ Mine: [Ask PDF](https://github.com/xtfocus/langchain_ask_pdf/) - a history-aware
 
 Stack: LLMs, Langchain, Sqlalchemy
 
-![](https://github.com/xtfocus/langchain_ask_pdf/blob/master/app.gif)
+<img src="https://github.com/xtfocus/langchain_ask_pdf/blob/master/app.gif" alt="Ask your pdf gif"  width="250" />
 
 If you are trying to create something like this, feel free to copy my code.
 
