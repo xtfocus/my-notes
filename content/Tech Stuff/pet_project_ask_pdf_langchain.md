@@ -13,5 +13,4 @@ Stack: LLMs, Langchain, Sqlalchemy
 
 If you are trying to create something like this, feel free to copy my code.
 
----
 
