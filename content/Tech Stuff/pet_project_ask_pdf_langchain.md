@@ -1,6 +1,6 @@
 ---
 title: "Pet Project: Ask PDF"
-tags: ["paper", "rag"]
+tags: ["rag", "vector-database", "vector-store", "project"]
 ---
 
 Classic but a must-have for guys seeking NLP jobs these days: a chat bot.
