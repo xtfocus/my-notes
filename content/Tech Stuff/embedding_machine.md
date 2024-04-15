@@ -36,7 +36,7 @@ The example above demonstrate the disadvantage of sentence similarity in a QA sy
 
 Plain sentence-embedding like BERT, SBERT is not good enough. Use an embedding machine optimized for QA instead. Some candidates:
 
-- DPR: optimized for QA, good on paper but also got critique because it might need lots of fine-tuning (Saw [James Briggs](https://www.youtube.com/@jamesbriggs) compared DPR with BM25, BM25 won). - Another article on why DPR sucks [here](https://thenewstack.io/overcoming-the-limits-of-rag-with-colbert/). In this article, ColBERT was recommended.
+- DPR: optimized for QA, good on paper but also got critique because it might need lots of fine-tuning (Saw [James Briggs](https://www.youtube.com/@jamesbriggs) compared DPR with BM25, BM25 won). - Another article on why DPR sucks [here](https://thenewstack.io/overcoming-the-limits-of-rag-with-colbert/). In this article, ColBERT was recommended. ColBERT was branded as a [semantic keyword matcher](https://ben.clavie.eu/ragatouille/#bag-of-embeddings-the-late-interaction-trick)
 - Others: https://huggingface.co/models?pipeline_tag=question-answering&sort=trending
 - https://huggingface.co/sentence-transformers/multi-qa-MiniLM-L6-cos-v1
 - https://huggingface.co/sentence-transformers/multi-qa-mpnet-base-dot-v1
