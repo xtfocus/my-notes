@@ -66,3 +66,5 @@ Resources:
 https://www.pinecone.io/learn/nemo-guardrails-intro/
 - https://aclanthology.org/2023.emnlp-demo.40.pdf
 - https://www.amazon.science/code-and-datasets/refchecker
+- https://arxiv.org/html/2402.01822v1
+- https://github.com/aurelio-labs/semantic-router
