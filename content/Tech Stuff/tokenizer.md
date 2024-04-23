@@ -46,7 +46,7 @@ A: Typically there are the following components
 - Normalization: lowercase, remove excess spaces, accents ('hếllo --> hello', resumé --> resume), [Unicode Normalization](https://unicode.org/reports/tr15/) (make sure that *equivalent* strings have a unique binary representation), etc.
 - Pre-tokenization: Splitting text into words
 - Modeling: algorithms are applied here to learn a vocabulary
-- Post-processing (adding the special tokens of the tokenizer, generating the attention mask and token type IDs)
+- Post-processing (adding the special tokens of the tokenizer, generating the attention mask and [token type IDs](https://huggingface.co/transformers/v3.2.0/glossary.html#token-type-ids), depends on the training setup)
 
 It's not uncommon for a tokenizer to ommit some of the components above. For example
 
