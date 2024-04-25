@@ -48,7 +48,7 @@ A: Typically there are the following components
 - Modeling: algorithms are applied here to learn a vocabulary
 - Post-processing (adding the special tokens of the tokenizer, generating the attention mask and [token type IDs](https://huggingface.co/transformers/v3.2.0/glossary.html#token-type-ids), depends on the training setup)
 
-It's not uncommon for a tokenizer to ommit some of the components above. For example
+It's not uncommon for a tokenizer to ommit some of the components above. For example, you can choose to skip Normalization
 
 ---
 Sources:
