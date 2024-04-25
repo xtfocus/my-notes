@@ -3,6 +3,14 @@ title: "Paper Review: Retrieval-Augmented Generation for Large Language Models: 
 tags: ["paper", "rag"]
 ---
 
+Update:
+
+Another RAG survey paper came out in April, newer than the paper that I review in this post.
+https://arxiv.org/abs/2402.19473
+
+
+---
+
 [Link](https://arxiv.org/pdf/2312.10997.pdf)
 
 ## Naive RAG
@@ -189,3 +197,6 @@ and that's it. What I was expecting is:
 These issues were briefly discussed on [reddit](https://www.reddit.com/r/LangChain/comments/167ndda/conversationalretrievalchains_pigeon_holes_on/), without any breakthrough. However, such problems were [not new](https://www.reddit.com/r/LocalLLaMA/comments/14xyg8h/handling_chat_histories_that_are_longer_than_the/), and a combination of short-term and long-term history sounds reasonable.
 
 LangChain's `ConversationBufferMemory` is also worth looking into.
+
+
+
