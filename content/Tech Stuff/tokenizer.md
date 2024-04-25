@@ -54,3 +54,4 @@ It's not uncommon for a tokenizer to ommit some of the components above. For exa
 Sources:
 - https://www.freecodecamp.org/news/train-algorithms-from-scratch-with-hugging-face/
 - https://huggingface.co/learn/nlp-course/en/chapter6/6
+- https://www.kaggle.com/code/xuntngnguyn/vietnamese-text-classification-like-youre-paid
