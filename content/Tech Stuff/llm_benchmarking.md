@@ -211,8 +211,8 @@ On Huggingface Open LLM leaderboard, I believe models are not fine-tuned but rat
 ## Ending: it's not the end
 
 There are many other benchmarks (not on [Huggingface Open LLM leaderboard](https://huggingfaceh4-open-llm-leaderboard.hf.space/)) :
-
-- GLUE and SuperGLUE: general language understanding
+- LAMBADA - predict missing word: https://paperswithcode.com/dataset/lambada
+- [GLUE](https://gluebenchmark.com/) and [SuperGLUE](https://super.gluebenchmark.com/): general language understanding
 - Benchmarking Code generation models: HumanEval, CodeXGLUE, etc
 - In this [article](https://www.openphilanthropy.org/rfp-llm-benchmarks/), the author critique the benchmarks for their *self-contained* natural, as answers are known. This implies a lack of benchmarking on real life open-ended problems.
 
@@ -223,5 +223,4 @@ Resources:
 - A Survey on Evaluation of Large Language Models https://arxiv.org/pdf/2307.03109
 - Large Language Models: A Survey https://arxiv.org/html/2402.06196v2
 - https://github.com/leobeeson/llm_benchmarks
-- https://gluebenchmark.com/
 - Discussion about the leaderboard on reddit [here](https://www.reddit.com/r/LocalLLaMA/comments/18hnzzn/a_107b_model_is_now_on_the_top_of_the_llm/) and [here](https://www.reddit.com/r/LocalLLaMA/comments/184nekd/is_open_llm_leaderboard_reliable_source_yi34b_is/)
