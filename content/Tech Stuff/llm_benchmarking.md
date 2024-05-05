@@ -8,7 +8,7 @@ Beginner to the LLM field might get lost in the metrics spaghetti. And new bench
 
 <img src="attachments/openllm_leaderboard.png" alt="openllm_leaderboard.png"  width="840" />
 
-In this article, I introduce benchmarks used in the [Huggingface Open LLM leaderboard](https://huggingface.co/datasets/open-llm-leaderboard/results). For each benchmark, we cover:
+In this article, I introduce benchmarks used in the [Huggingface Open LLM leaderboard](https://huggingfaceh4-open-llm-leaderboard.hf.space/). For each benchmark, we cover:
 - what do they test
 - what's the data look like
 - trivial info if any
@@ -210,7 +210,7 @@ On Huggingface Open LLM leaderboard, I believe models are not fine-tuned but rat
 
 ## Ending: it's not the end
 
-There are many other benchmarks (not on [Huggingface Open LLM leaderboard](https://huggingface.co/datasets/open-llm-leaderboard/results)) :
+There are many other benchmarks (not on [Huggingface Open LLM leaderboard](https://huggingfaceh4-open-llm-leaderboard.hf.space/)) :
 
 - GLUE and SuperGLUE: general language understanding
 - Benchmarking Code generation models: HumanEval, CodeXGLUE, etc
@@ -224,3 +224,4 @@ Resources:
 - Large Language Models: A Survey https://arxiv.org/html/2402.06196v2
 - https://github.com/leobeeson/llm_benchmarks
 - https://gluebenchmark.com/
+- Discussion about the leaderboard on reddit [here](https://www.reddit.com/r/LocalLLaMA/comments/18hnzzn/a_107b_model_is_now_on_the_top_of_the_llm/) and [here](https://www.reddit.com/r/LocalLLaMA/comments/184nekd/is_open_llm_leaderboard_reliable_source_yi34b_is/)
