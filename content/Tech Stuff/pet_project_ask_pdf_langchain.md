@@ -1,5 +1,5 @@
 ---
-title: "Pet Project: Ask PDF"
+title: "📎Pet Project: Ask PDF"
 tags: ["rag", "vector-database", "vector-store", "project"]
 ---
 

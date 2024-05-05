@@ -1,5 +1,5 @@
 ---
-title: "Paper Review: Retrieval-Augmented Generation for Large Language Models: A Survey"
+title: "🌐Paper Review: Retrieval-Augmented Generation for Large Language Models: A Survey"
 tags: ["paper", "rag"]
 ---
 

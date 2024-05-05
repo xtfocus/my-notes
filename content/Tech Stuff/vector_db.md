@@ -1,5 +1,5 @@
 ---
-title: Vector Store Introduction
+title: 🏹🛢Vector Store Introduction
 aliases:
 tags:
   - vector-database

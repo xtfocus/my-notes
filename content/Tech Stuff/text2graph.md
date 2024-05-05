@@ -1,5 +1,5 @@
 ---
-title: "Text to graph: Why and How "
+title: "🕸️Text to graph: Why and How "
 tags: ["rag", "vector-database", "graph"]
 ---
 

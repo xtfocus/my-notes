@@ -1,5 +1,5 @@
 ---
-title: Vaccination articles from nhathuoclongchau.com.vn
+title: 📂Vaccination articles from nhathuoclongchau.com.vn
 aliases: ["lc_vaccine_articles_json"]
 tags: ["dataset"]
 categories: ["dataset"]

@@ -1,5 +1,5 @@
 ---
-title: PZ Wiki dataset
+title: ☢PZ Wiki dataset☢
 tags: ["dataset"]
 categories: ["dataset"]
 ---

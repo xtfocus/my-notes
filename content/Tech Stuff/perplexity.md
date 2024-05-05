@@ -1,5 +1,5 @@
 ---
-title: "Understanding perplexity"
+title: " 📏Understanding perplexity"
 tags: ["benchmarking"]
 ---
 

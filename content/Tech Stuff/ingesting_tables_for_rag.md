@@ -1,5 +1,5 @@
 ---
-title: Ingest tables for RAG application
+title: ᗧ···Ingest tables for RAG application
 tags: ["rag"]
 categories: []
 ---

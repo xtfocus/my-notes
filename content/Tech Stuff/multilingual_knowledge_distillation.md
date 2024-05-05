@@ -1,5 +1,5 @@
 ---
-title: Multilingual Knowledge Distillation
+title: 🌐Multilingual Knowledge Distillation
 tags: ["fine-tuning", "sentence-transformer"]
 ---
 

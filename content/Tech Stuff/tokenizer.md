@@ -1,5 +1,5 @@
 ---
-title: "Know your tokenizer"
+title: "🪙Know your tokenizer"
 tags: []
 categories: []
 series: [""]
