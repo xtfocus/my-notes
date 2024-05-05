@@ -6,7 +6,7 @@ categories: []
 
 Beginner to the LLM field might get lost in the metrics spaghetti. And new benchmarks got published every once in a while.
 
-<img src="attachments/openllm_loaderboard.png" alt="openllm_loaderboard.png"  width="420" />
+<img src="attachments/openllm_leaderboard.png" alt="openllm_leaderboard.png"  width="420" />
 
 In this article, I introduce benchmarks used in the [Huggingface Open LLM leaderboard](https://huggingface.co/datasets/open-llm-leaderboard/results). For each benchmark, we cover:
 - what do they test
