@@ -1,5 +1,5 @@
 ---
-title: LLM benchmarking
+title: 📏LLM benchmarking
 tags: ["benchmarking"]
 categories: []
 ---
@@ -8,8 +8,7 @@ Beginner to the LLM field might get lost in the metrics spaghetti. And new bench
 
 <img src="attachments/openllm_loaderboard.png" alt="openllm_loaderboard.png"  width="420" />
 
-In this article, I introduce benchmarks used in the [Huggingface Open LLM leaderboard](https://huggingface.co/datasets/open-llm-leaderboard/results).
-For each benchmark, we cover:
+In this article, I introduce benchmarks used in the [Huggingface Open LLM leaderboard](https://huggingface.co/datasets/open-llm-leaderboard/results). For each benchmark, we cover:
 - what do they test
 - what's the data look like
 - trivial info if any
