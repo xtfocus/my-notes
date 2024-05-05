@@ -6,7 +6,7 @@ categories: []
 
 Beginner to the LLM field might get lost in the metrics spaghetti. And new benchmarks got published every once in a while.
 
-<img src="attachments/openllm_leaderboard.png" alt="openllm_leaderboard.png"  width="420" />
+<img src="attachments/openllm_leaderboard.png" alt="openllm_leaderboard.png"  width="840" />
 
 In this article, I introduce benchmarks used in the [Huggingface Open LLM leaderboard](https://huggingface.co/datasets/open-llm-leaderboard/results). For each benchmark, we cover:
 - what do they test
@@ -38,7 +38,7 @@ from WikiHow, covering such diverse topics as
 a bank robbery.” Each context has at most three
 sentences, as do the follow-ups.
 
-<img src="attachments/dragonfly.png" alt="dragonfly.png"  width="420" />
+<img src="attachments/dragonfly.png" alt="dragonfly.png"  width="520" />
 
 Given these contexts, the author trained an algorithm that is very good at tricking LMs into picking the wrong answers over the correct one:
 
@@ -80,7 +80,7 @@ https://arxiv.org/pdf/1907.10641
 
 on [Huggingface](https://huggingface.co/datasets/winogrande)
 
-<img src="attachments/winogrande_twin.png" alt="winogrande_twin.png"  width="420" />
+<img src="attachments/winogrande_twin.png" alt="winogrande_twin.png"  width="520" />
 
 The dataset presents *twin sentences*: a pair of sentences that are just one word different from each other, but this word decides what is being refered to. In the examples above, **it** refers to the bottle in the first sentece. In the second sentence, the child is now full, he doesn't need the bottle anymore, so the toy's usefulness is relevant here.
 
@@ -130,7 +130,7 @@ All **57** specialized subjects (or *tasks*, termed by the author) are listed in
 
 Similar to HellaSwag, MMLU follows the multiple-choice format
 
-<img src="attachments/glue_fewshots.png" alt="glue_fewshots.png"  width="420" />
+<img src="attachments/glue_fewshots.png" alt="glue_fewshots.png"  width="380" />
 
 The MMLU paper is a really important one.
 
