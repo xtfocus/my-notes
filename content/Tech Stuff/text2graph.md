@@ -79,5 +79,6 @@ Resource:
     - https://towardsdatascience.com/fastcoref-a-practical-package-for-coreference-resolution-bfbcb749e464
     - https://medium.com/@michaelwood33311/creating-accurate-ai-coreference-resolution-with-fastcoref-20f06044bdf9
 
+- For the cowboys: https://towardsdatascience.com/how-to-convert-any-text-into-a-graph-of-concepts-110844f22a1a
 
 
