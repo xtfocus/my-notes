@@ -55,3 +55,4 @@ Sources:
 - https://www.freecodecamp.org/news/train-algorithms-from-scratch-with-hugging-face/
 - https://huggingface.co/learn/nlp-course/en/chapter6/6
 - https://www.kaggle.com/code/xuntngnguyn/vietnamese-text-classification-like-youre-paid
+- https://thepythoncode.com/article/pretraining-bert-huggingface-transformers-in-python
