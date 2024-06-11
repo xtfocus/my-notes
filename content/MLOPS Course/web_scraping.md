@@ -27,7 +27,7 @@ https://github.com/xtfocus/weather_data_crawler
 
 Good old soup + requests combo is enough.
 
-Features:
+Functionality:
 
 - query historical weather data (WIP)
 - query current weather data (DONE)
