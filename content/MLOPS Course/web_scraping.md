@@ -6,7 +6,7 @@ categories: ["mlops"]
 
 ![hanoi_weather.png](/home/tung/websites/my_note/content/attachments/hanoi_weather.png)
 
-This post is a dashboad of what I'm working on for the final project of Quan's course. I will be updating frequently
+This post is a dashboad of what I'm working on for the final project of [[Quan_course_introduction.md|Quan's course]]. I will be updating frequently
 
 # The project idea
 
