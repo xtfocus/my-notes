@@ -1,5 +1,5 @@
 ---
-title: MLOPs Course Project
+title: ☔MLOPs Course Project
 tags: ["mlops"]
 categories: ["mlops"]
 ---
@@ -7,7 +7,6 @@ categories: ["mlops"]
 <p align="center">
   <img src="attachments/hanoi_weather.png" alt="hanoi_weather.png"/>
 </p>
-
 
 This post is a dashboad of what I'm working on for the final project of [[Quan_course_introduction|Quan's course]]. I will be updating frequently
 
