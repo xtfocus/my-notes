@@ -4,9 +4,13 @@ tags: ["mlops"]
 categories: ["mlops"]
 ---
 
-![hanoi_weather.png](content/attachments/hanoi_weather.png)
+<p align="center">
+  <img src="content/attachments/hanoi_weather.png" alt="hanoi_weather.png"/>
+</p>
 
-This post is a dashboad of what I'm working on for the final project of [[Quan_course_introduction.md|Quan's course]]. I will be updating frequently
+
+
+This post is a dashboad of what I'm working on for the final project of [[Quan_course_introduction|Quan's course]]. I will be updating frequently
 
 # The project idea
 
