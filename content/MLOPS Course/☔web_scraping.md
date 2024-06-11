@@ -9,7 +9,6 @@ categories: ["mlops"]
 </p>
 
 
-
 This post is a dashboad of what I'm working on for the final project of [[Quan_course_introduction|Quan's course]]. I will be updating frequently
 
 # The project idea
