@@ -5,7 +5,7 @@ categories: ["mlops"]
 ---
 
 <p align="center">
-  <img src="content/attachments/hanoi_weather.png" alt="hanoi_weather.png"/>
+  <img src="attachments/hanoi_weather.png" alt="hanoi_weather.png"/>
 </p>
 
 
