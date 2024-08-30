@@ -27,7 +27,7 @@ Good old soup + requests combo is enough.
 
 Functionality:
 
-- query historical weather data (WIP)
+- query historical weather data (DONE)
 - query current weather data (DONE)
 - query forecasting results provided by third parties (usually the websites themselves) (WIP)
 
@@ -35,7 +35,8 @@ The repo also features some good dev practices:
 - tests
 - pre-commit hooks
 - docstrings
-- Pydantic models
+- pydantic data models
+- packaging with `pyproject.toml`
 
 # Prediction
 
